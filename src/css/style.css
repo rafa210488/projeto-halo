@@ -1,0 +1,168 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.fundo-video {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.fundo-video .video{
+  height: 100vh;
+  ;
+}
+.fundo-video::after {
+  content: "";
+  background-color: #bcc3c6;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,1) 100%
+  );
+  
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 30px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+}
+
+.halologo {
+  width: 65px;
+  
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}    
+
+.header nav li a {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.header nav li a:hover {
+  background-color: #bcc3c6;
+  cursor:pointer;
+  color:black
+  
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 132px);
+  padding: 0 30px 30px;
+  
+}
+
+.logo {
+  max-width: 400px;
+  
+}
+
+.descricao {
+  color: #bcc3c6;
+  margin: 30px 0;
+  width: 85%;
+  font-size: 18px;
+  
+}
+
+.trailer {
+  background-color: #c9d4d8;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  
+  
+  transition: 0.3s all ease-in-out
+}
+
+.trailer:hover {
+  transform: scale(1.1);
+}
+
+.masterchief {
+  width: 200px;
+}
+
+.modal {
+  background-color: rgba(52,52,50,0.749);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  
+}
+
+.conteudo-modal {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  gap: 15px;
+}
+
+.fechar-modal {
+  background-color:#bcc3c6;
+  color: black;
+  width: 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.modal.aberto {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
